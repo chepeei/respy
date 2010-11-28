@@ -3,21 +3,21 @@
 
 echo "============================="
 echo " Prepare to restore settings"
-echo ""
-echo "Run pppoe-setup..."
-echo ""
-pppoe-setup
-echo ""
-echo "Restore pppoe.conf..."
-sleep 5
-echo ""
-cp /z/a.Backup/Dropbox/settings/a.Archlinux/pppoe.conf /etc/ppp/pppoe.conf
-sleep 5
-echo ""
-echo "Run adsl connection..."
-echo ""
-/etc/rc.d/adsl start
-sleep 5
+#echo ""
+#echo "Run pppoe-setup..."
+#echo ""
+#pppoe-setup
+#echo ""
+#echo "Restore pppoe.conf..."
+#sleep 5
+#echo ""
+#cp /z/a.Backup/Dropbox/settings/a.Archlinux/pppoe.conf /etc/ppp/pppoe.conf
+#sleep 5
+#echo ""
+#echo "Run adsl connection..."
+#echo ""
+#/etc/rc.d/adsl start
+#sleep 5
 echo ""
 echo "Update packets info..."
 echo ""

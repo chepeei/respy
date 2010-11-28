@@ -45,7 +45,7 @@ if input('|-- Add new user? ') == 'y':
     os.system('gpasswd -a '+username+' video')
 
 if input('\'-- Install sudo? ') == 'y':
-    username = 'angel'
+    username = 'a'
     os.system('pacman -S sudo')
     open('/etc/sudoers','a').write('\n'+username+'   ALL=(ALL) ALL'+'\n'+username+'   ALL= NOPASSWD: /usr/bin/cpufreq-set'+'\n'+username+'   ALL= NOPASSWD: /sbin/reboot'+'\n'+username+'   ALL= NOPASSWD: /sbin/poweroff'+'\n'+username+'   ALL= NOPASSWD: /sbin/hdparm'+'\n'+username+'  ALL= NOPASSWD: /sbin/shutdown'+'\n'+username+'   ALL= NOPASSWD: /sbin/halt\n\n')
 

@@ -1,1 +1,2 @@
-git clone https://github.com/chepeei/respy.git
+pacman -S git
+git clone http://github.com/chepeei/respy.git
