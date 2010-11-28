@@ -11,4 +11,3 @@ import config, fonts, dotfiles, packets
 #dotfiles.refresh()
 
 print(config.setdir)
-
