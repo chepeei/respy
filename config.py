@@ -69,4 +69,6 @@ packets = [\
     'libgnome',\
 # Tools
     'wireshark','nmap','zenmap',\
+# Git
+    'giggle','gitk','qgit',\
 ]
