@@ -4,10 +4,10 @@ setdir = '/z/Backup/restore/settings/'
 homedir = '/home/a'
 settings = [
     '.icons',               homedir+'/.icons',\
-    '.mc',                  homedir+'/.mc',\
-    '.mpd',                 homedir+'/.mpd',\
+    #'.mc',                  homedir+'/.mc',\
+    #'.mpd',                 homedir+'/.mpd',\
     'terminal',             homedir+'/.config/Terminal',\
-    'deadbeef',             homedir+'/.config/deadbeef',\
+    #'deadbeef',             homedir+'/.config/deadbeef',\
     'conky',                homedir+'/.config/conky',\
     '.irssi',               homedir+'/.irssi',\
     '.mozilla',             homedir+'/.mozilla',\
@@ -58,8 +58,9 @@ packets = [\
 # Crypting
     'encfs',\
 # Python, vim dev
-    'django','sqliteman',\
     'python2','python3',\
+    'django',\
+    'sqlite3','sqliteman',\
     'ctags','gvim',\
 # Notebook
     'acpi','acpid','laptop-mode-tools','cpufrequtils',\
