@@ -39,22 +39,22 @@ packets = [\
     'gvfs','gnome-menus',\
     'xlockmore',\
     #gvfs-smb gvfs-obexftp gvfs-afc
+# Base devel
+    'automake','patch','gcc',\
 # Appearance
     'gtk-candido-engine','xcursor-vanilla-dmz',\
-# Dev
-    'automake','patch','gcc',\
 # System utils
     'ntfs-3g','gparted',\
 # Openbox
-    'lxappearance','obconf','openbox','zsh',\
-    'dmenu-xft','tilda','parcellite','xcompmgr','feh','lxtask','tint2','volwheel',\
+    'lxappearance','obconf','openbox','tint2','volwheel',\
 # Fonts
     'ttf-ms-fonts','ttf-dejavu','ttf-droid','artwiz-fonts','ttf-bitstream-vera',\
 # Soft
+    'dmenu-xft','tilda','xcompmgr','feh','lxtask',\
     'gpicview','evince','file-roller','wine','transmission-gtk','vlc','xfburn','gcalctool',\
     'firefox-branded','flashplugin',\
-    'pcmanfm','gigolo-git',\
-    'mc',\
+    'pcmanfm','gigolo-git','parcellite',\
+    'mc','zsh',\
 # Crypting
     'encfs',\
 # Python, vim dev
@@ -67,4 +67,6 @@ packets = [\
 # Fix
     # fix firefox association problems
     'libgnome',\
+# Tools
+    'wireshark','nmap','zenmap',\
 ]
