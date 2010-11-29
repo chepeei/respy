@@ -1,49 +1,50 @@
 #!/usr/bin/env python3
 
 setdir = '/z/Backup/restore/settings/'
-
+homedir = '/home/a'
 settings = [
-    '.icons', '/home/angel/.icons',\
-    '.mc', '/home/angel/.mc',\
-    '.mpd', '/home/angel/.mpd',\
-    'terminal', '/home/angel/.config/Terminal',\
-    'deadbeef', '/home/angel/.config/deadbeef',\
-    'conky', '/home/angel/.config/conky',\
-    '.irssi', '/home/angel/.irssi',\
-    '.mozilla', '/home/angel/.mozilla',\
-    '.vimeratorrc', '/home/angel/.vimperatorrc',\
-    '.zshrc', '/home/angel/.zshrc',\
-    'vim/.vimrc', '/home/angel/.vimrc', 'vim/.vim', '/home/angel/.vim',\
-    'vim/vimwiki', '/home/angel/vimwiki',\
-    'openbox', '/home/angel/.config/openbox', '.themes', '/home/angel/.themes',\
-    'tint2', '/home/angel/.config/tint2',\
-    'vlc', '/home/angel/.config/vlc',\
-    'pcmanfm', '/home/angel/.config/pcmanfm','libfm', '/home/angel/.config/libfm',\
-    '.fonts', '/home/angel/.fonts',\
-    'tilda/config_0', '/home/angel/.tilda/config_0',\
-    'bash/.bash_profile', '/home/angel/.bash_profile', 'bash/.bashrc', '/home/angel/.bashrc',\
-    'gtk/.gtk-bookmarks', '/home/angel/.gtk-bookmarks', 'gtk/.gtkrc-2.0', '/home/angel/.gtkrc-2.0', 'gtk/.gtkrc-2.0-kde', '/home/angel/.gtkrc-2.0-kde',
-    'gtk/.gtkrc-2.0.mine', '/home/angel/.gtkrc-2.0.mine',\
-    'bin', '/home/angel/bin',\
-    '.xinitrc', '/home/angel/.xinitrc', '.xsession', '/home/angel/.xsession',\
-    '.pythonstartup', '/home/angel/.pythonstartup',\
-    '.Xdefaults', '/home/angel/.Xdefaults',\
+    '.icons',               homedir+'/.icons',\
+    '.mc',                  homedir+'/.mc',\
+    '.mpd',                 homedir+'/.mpd',\
+    'terminal',             homedir+'/.config/Terminal',\
+    'deadbeef',             homedir+'/.config/deadbeef',\
+    'conky',                homedir+'/.config/conky',\
+    '.irssi',               homedir+'/.irssi',\
+    '.mozilla',             homedir+'/.mozilla',\
+    '.vimeratorrc',         homedir+'/.vimperatorrc',\
+    '.zshrc',               homedir+'/.zshrc',\
+    'vim/.vimrc',           homedir+'/.vimrc', 'vim/.vim', '/home/angel/.vim',\
+    'vim/vimwiki',          homedir+'/vimwiki',\
+    'openbox',              homedir+'/.config/openbox', '.themes', '/home/angel/.themes',\
+    'tint2',                homedir+'/.config/tint2',\
+    'vlc',                  homedir+'/.config/vlc',\
+    'pcmanfm',              homedir+'/.config/pcmanfm','libfm', '/home/angel/.config/libfm',\
+    '.fonts',               homedir+'/.fonts',\
+    'tilda/config_0',       homedir+'/.tilda/config_0',\
+    'bash/.bash_profile',   homedir+'/.bash_profile', 'bash/.bashrc', '/home/angel/.bashrc',\
+    'gtk/.gtk-bookmarks',   homedir+'/.gtk-bookmarks', 'gtk/.gtkrc-2.0', '/home/angel/.gtkrc-2.0', 'gtk/.gtkrc-2.0-kde', '/home/angel/.gtkrc-2.0-kde',
+    'gtk/.gtkrc-2.0.mine',  homedir+'/.gtkrc-2.0.mine',\
+    'bin',                  homedir+'/bin',\
+    '.xinitrc',             homedir+'/.xinitrc', '.xsession', '/home/angel/.xsession',\
+    '.pythonstartup',       homedir+'/.pythonstartup',\
+    '.Xdefaults',           homedir+'/.Xdefaults',\
+    'gtg',                  homedir+'/.local/share/gtg',\
     #list += ['../../.mozilla', '/home/angel/.mozilla',\
-    'gtg', '/home/angel/.local/share/gtg',\
 ]
 
 packets = [\
 # Base
     'hal','gamin','terminal','gksu','sudo','screen','grc',\
-    'gtk-candido-engine','xcursor-vanilla-dmz',\
-    'tar','unrar','unzip','ntfs-3g','ntfsprogs','htop','zip','gzip','bzip2','dosfstools',\
+    'tar','unrar','unzip','ntfsprogs','htop','zip','gzip','bzip2','dosfstools',\
     'gvfs','gnome-menus',\
     'xlockmore',\
     #gvfs-smb gvfs-obexftp gvfs-afc
+# Appearance
+    'gtk-candido-engine','xcursor-vanilla-dmz',\
 # Dev
     'automake','patch','gcc',\
 # System utils
-    'gparted',\
+    'ntfs-3g','gparted',\
 # Openbox
     'lxappearance','obconf','openbox','zsh',\
     'dmenu-xft','tilda','parcellite','xcompmgr','feh','lxtask','tint2','volwheel',\
@@ -57,11 +58,12 @@ packets = [\
 # Crypting
     'encfs',\
 # Python, vim dev
-    'django','ctags','sqliteman',\
-    'python','python3',\
-    'gvim',\
+    'django','sqliteman',\
+    'python2','python3',\
+    'ctags','gvim',\
 # Notebook
     'acpi','acpid','laptop-mode-tools','cpufrequtils',\
 # Fix
-    'libgnome',\ # fix firefox association problems
+    # fix firefox association problems
+    'libgnome',\
 ]

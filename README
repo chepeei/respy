@@ -1,2 +1,5 @@
-pacman -S git
+pacman -S git python2 python3
 git clone http://github.com/chepeei/respy.git
+./base_setup.py
+./install_fonts.py # optional
+./install_packets.py # optional, use config.py                                                                                              

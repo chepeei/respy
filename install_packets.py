@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
 def install():
+    import sys
+    sys.dont_write_bytecode = True
+
     import os
     import config
 
